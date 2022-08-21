@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Store</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="/index.html">
+            <img class="cabecalho-imagem" src="/logo.png" alt="Logo do site de jogos.">
+        </a>
+        <nav class="cabecalho-menu">
+            <a href="/index.html" class="cabecalho-menu-item">Store</a>
+            <a href="/index.html" class="cabecalho-menu-item">FAQ</a>
+            <a href="/index.html" class="cabecalho-menu-item">Help</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo"> Games Store</h1>
+            </div>
+        </section>
+
+        <section>
+            <div id="container">
+                <h3 class="conteudo-subtitulo">Lista de Games</h3>
+                <div class="container">
+                    <button class="botao" onclick="fetchApiData()">Clique aqui para listar todos os jogos! </button>
+                </div>
+                <ul id="fill_list"></ul>
+            </div>
+        </section>
+
+        <div class="campo">
+            <h3 id="tituloFiltro">Filtro</h3>
+            <p id="subtitulo">Complete as informações: </p>
+            <br>
+        </div>
+
+        <div class="campo">
+            <label for="selectGenero"><strong>Selecione o Gênero (Obrigatório):</strong></label>
+            <select id="selectGenero" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="mmorpg">MMORPG</option>
+                <option value="shooter">Shooter</option>
+                <option value="moba">Moba</option>
+                <option value="anime">Anime</option>
+                <option value="battle-royale">Battle Royale</option>
+                <option value="strategy">Strategy</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Sci-fi</option>
+                <option value="card">Card</option>
+                <option value="racing">Racing</option>
+                <option value="fighting">Fighting</option>
+                <option value="social">Social</option>
+                <option value="sports">Sports</option>
+            </select>
+        </div>
+
+        <div id="mensagem"></div>
+
+        <div class="campo">
+            <label for="selectPlataforma"><strong>Selecione a Plataforma (Opcional):</strong></label>
+            <select id="selectPlataforma">
+                <option selected disabled value="">Selecione</option>
+                <option value="browser">Navegador Web</option>
+                <option value="pc">Computador</option>
+            </select>
+        </div>
+
+        <button class="botao-form" onclick="filtrar()">Filtrar </button>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

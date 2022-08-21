@@ -1,0 +1,103 @@
+* {
+    margin: 7px;
+    padding: 0px;
+}
+
+body {
+    font-size: 100%;
+    background: #272b30;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cabecalho-imagem {
+    height: 100px;
+}
+
+.cabecalho-menu {
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #e9ecef;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.conteudo {
+    font-family: 'Sarala', sans-serif;
+    border-top: 3px solid #074F57;
+    color: #93969d;
+    font-size: 16px;
+}
+
+.conteudo-principal {
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 8px 8px 10px black;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 150px;
+    row-gap: 30px;
+}
+
+.container {
+    text-shadow: 8px 8px 10px black;
+}
+
+.botao {
+    font-family: 'Sarala', sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #e9ecef;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.titulo {
+    font-family: 'Sarala', sans-serif;
+    font-size: 16px;
+}
+
+.imagem {
+    padding-bottom: 10px;
+}
+
+.descricacao {
+    font-family: 'Sarala', sans-serif;
+    text-align: justify;
+}
+
+#titulo {
+    font-family: 'Sarala', sans-serif;
+    color: #93969d;
+}
+
+fieldset {
+    border: 0;    
+}
+
+input, select, button{
+    font-family: 'Sarala', sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px;
+} 
+
+
+
+
