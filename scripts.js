@@ -33,22 +33,19 @@ function fetchApiData(){
 }
 
 async function filtrar() {
-	const genero = document.getElementById('selectGenero');
+	const genero = document.getElementById("selectGenero");
 	if(genero.value === "") {
-		console.log("genero obrigatório")
 
 		let data1 =` <div class="mensagem">
-			<p class="descricao">A seleção de genero é obrigatória</p>
+			<p class="descricao">A seleção de gênero é obrigatório.</p>
 		</div>`
 		document.getElementById("mensagem").innerHTML=data1;
 		return
 	}
 	var generoValue = genero.options[genero.selectedIndex].value;
-	console.log(generoValue)
 
-	const plataforma = document.getElementById('selectPlataforma');
+	const plataforma = document.getElementById("selectPlataforma");
 	var plataformaValue = plataforma.options[plataforma.selectedIndex].value;
-	console.log(plataformaValue)
 
 	//fetch('https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=browser', options)
 	var fetchString = plataformaValue === "" ? 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=' + generoValue + '&sort-by=release-date' :
@@ -59,7 +56,6 @@ async function filtrar() {
 	.then(data => {
 		let data1="";
 
-		console.log(data)
 		if(data.status_message) {
 				data1+=` <div class="container">
 				<p class="descricao">Result not found: ${data.status_message}</p>
@@ -97,7 +93,6 @@ async function filtrar() {
 		document.getElementById("mensagem").innerHTML=data1;
 		
 	}).catch(error => {
-		console.log(error)
 		throw(error);
 	})
 }

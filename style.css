@@ -53,6 +53,8 @@ body {
     grid-template-columns: 20% 20% 20%;
     column-gap: 150px;
     row-gap: 30px;
+    justify-content: space-around;
+
 }
 
 .container {
@@ -86,10 +88,6 @@ body {
 #titulo {
     font-family: 'Sarala', sans-serif;
     color: #93969d;
-}
-
-fieldset {
-    border: 0;    
 }
 
 input, select, button{
